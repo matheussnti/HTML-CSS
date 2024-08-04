@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+    <meta name="description" content="Demonstração de uso de mídias dinâmicas em HTML, incluindo imagens responsivas e reprodução de áudio.">
+</head>
+<body>
+    <header>
+        <h1>Mídias em HTML</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Imagem Dinâmica</h2>
+            <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente diminua o tamanho do seu navegador.</p>
+
+            <picture>
+                <source media="(max-width: 700px)" srcset="imagens/foto_p.png" type="image/png">
+                <source media="(max-width: 1050px)" srcset="imagens/foto_m.png" type="image/png">
+                <img src="imagens/foto_g.png" alt="Imagem flexível que se adapta ao tamanho da tela" title="Imagem flexível" loading="lazy">
+            </picture>
+        </section>
+
+        <section>
+            <h2>Reproduzindo Áudio</h2>
+            <p>Vamos reproduzir um áudio ambiente:</p>
+
+            <audio preload="none" autoplay controls loop>
+                <source src="midia/beatrock.mp3" type="audio/mpeg" title="Arquivo MP3">
+                <source src="midia/beatrock.ogg" type="audio/ogg" title="Arquivo OGG">
+                <source src="midia/beatrock.wav" type="audio/wav" title="Arquivo WAV">
+                <p>Infelizmente, seu navegador não consegue reproduzir áudio. <a href="midia/beatrock.mp3">Clique aqui</a> para baixar o arquivo.</p>
+            </audio>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Exemplo de Mídias em HTML</p>
+    </footer>
+</body>
+</html>

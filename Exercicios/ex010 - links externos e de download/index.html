@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links Externos e Internos</title>
+</head>
+<body>
+    <h1>Usando Links Externos</h1>
+    <p>Links externos direcionam você a um site exterior ao atual.</p>
+    <p>Usando um link externo:</p>
+    <p>Clique <a href="https://www.palmeiras.com.br/" target="_blank" rel="nofollow">aqui para ir ao site do Palmeiras</a></p>
+    <p>Você também pode ir ao site do Corinthians <a href="https://www.corinthians.com.br/" target="_blank">clicando aqui</a></p>
+    <p>Visite a página da Wikipedia <a href="https://www.wikipedia.org/" rel="dofollow">clicando aqui</a> para acessar mais informações.</p>
+    
+    <hr>
+    
+    <h1>Usando Links Internos</h1>
+    <p>Links internos são aqueles que apontam para outras páginas ou seções dentro do mesmo site ou documento.</p>
+    <p>Para acessar a próxima página do site, clique <a href="pag02.html" rel="next">aqui</a>.</p>
+    <p>Você também pode acessar a página anterior clicando <a href="pag01.html" rel="prev">aqui</a>.</p>
+    
+    <hr>
+    
+    <h1>Explicação dos Atributos de Link</h1>
+    <ul>
+        <li><code>rel="nofollow"</code>: Indica aos motores de busca para não seguir o link. É útil quando você não deseja passar autoridade de SEO para o site de destino. Exemplo: <a href="https://www.palmeiras.com.br/" rel="nofollow">Palmeiras</a>.</li>
+        <li><code>rel="dofollow"</code>: É o comportamento padrão dos links. Indica aos motores de busca para seguir o link e passar autoridade. Exemplo: <a href="https://www.wikipedia.org/" rel="dofollow">Wikipedia</a>.</li>
+    </ul>
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livro/blue professional modern CV resume_20240319_112017_0000 (1).zip" download="blue.cv.zip">BAIXAR CV</a></li>
+    </ul>
+</ul>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus vídeos</title>
+    <link rel="shortcut icon" href="imagens/favicon/favicon-32x32.png" type="image/x-icon">
+    <style>
+        /* Reset básico para remover margens e padding padrão */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Fonte padrão e estilo de texto */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        /* Estilo do container principal */
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        /* Estilo do cabeçalho */
+        header h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+            color: #4a90e2;
+        }
+
+        /* Grid para os vídeos */
+        .video-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        /* Estilo das miniaturas dos vídeos */
+        .video-thumb {
+            width: 100%;
+            max-width: 350px;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Efeito de hover nas miniaturas */
+        .video-thumb:hover {
+            transform: scale(1.05);
+        }
+
+        /* Estilo do link para o curso completo */
+        .link-curso {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .link-curso a {
+            text-decoration: none;
+            color: #4a90e2;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .link-curso a:hover {
+            color: #0056b3;
+        }
+
+        /* Estilo do rodapé */
+        footer {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        /* Estilo do botão de voltar */
+        .back-button {
+            text-decoration: none;
+            font-size: 1.2em;
+            color: #4a90e2;
+            padding: 10px 20px;
+            border: 2px solid #4a90e2;
+            border-radius: 8px;
+            display: inline-block;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        /* Efeito de hover no botão de voltar */
+        .back-button:hover {
+            background-color: #4a90e2;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Vídeos legais para assistir</h1>
+        </header>
+        <main>
+            <div class="video-grid">
+                <a href="html.html">
+                    <img src="imagens/curso_html.png" alt="Curso HTML" class="video-thumb">
+                </a>
+                <a href="lp.html">
+                    <img src="imagens/curso_lp.png" alt="Curso Lógica de Programação" class="video-thumb">
+                </a>
+                <a href="php.html">
+                    <img src="imagens/curso_php.png" alt="Curso PHP" class="video-thumb">
+                </a>
+                <a href="python.html">
+                    <img src="imagens/curso_python.png" alt="Curso Python" class="video-thumb">
+                </a>
+            </div>
+            <p class="link-curso"><a href="https://youtube.com/playlist?list=PLHz_AreHm4dlAnJ_jJtV29RFxnPHDuk9o&si=LJ4HzzyaAocYmTOD">Veja o curso completo</a></p>
+        </main>
+        <footer>
+            <a href="javascript:history.back()" class="back-button">&#x2B05; Voltar</a>
+        </footer>
+    </div>
+</body>
+</html>

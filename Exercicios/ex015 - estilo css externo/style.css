@@ -1,0 +1,93 @@
+/* Resetando estilos padrões do navegador para garantir consistência */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral da página */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Estilo para o título principal */
+h1 {
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+/* Estilo para os subtítulos */
+h2 {
+    font-size: 1.5em;
+    color: #2980b9;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    border-left: 4px solid #3498db;
+}
+
+/* Estilo para parágrafos */
+p {
+    margin-bottom: 20px;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #2d3436;
+}
+
+/* Estilo para links */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para a linha horizontal */
+hr {
+    margin: 40px 0;
+    border: 0;
+    height: 1px;
+    background: #bdc3c7;
+}
+
+/* Estilo para a lista não ordenada */
+ul {
+    list-style-type: none;
+    margin: 20px 0;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+    font-size: 1em;
+    color: #34495e;
+}
+
+/* Adicionando um marcador personalizado para os itens da lista */
+ul li:before {
+    content: "\2022"; /* Código do ponto */
+    position: absolute;
+    left: 0;
+    color: #e74c3c; /* Cor do marcador */
+}
+
+/* Estilo para a lista e parágrafo combinados */
+ul p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Estilo para espaçamento após parágrafos */
+p + p {
+    margin-top: 10px;
+}
